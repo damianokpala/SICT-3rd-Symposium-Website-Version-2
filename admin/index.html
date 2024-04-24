@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Portal</title>
+
+    <link rel="stylesheet" href="/src/output.css" />
+  </head>
+  <body class="relative">
+    <header class="py-9 text-xl">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="logo"
+          ><img class="w-40" src="../src/image/logo (3).png" alt=""
+        /></a>
+        <nav>
+          <ul class="flex gap-9">
+            <li><a href="/public/index.html">Home</a></li>
+            <li><a href="#">Admin</a></li>
+          </ul>
+        </nav>
+
+        <a
+          href="#"
+          class="text-purple font-semibold nav-cta flex gap-3 items-center"
+          >Logout
+          <svg width="100px" height="2px">
+            <line y1="0.5" x2="255.008" y2="0.5" stroke="black" /></svg
+        ></a>
+      </div>
+    </header>
+
+    <main>
+      <div class="container mx-auto my-20">
+        <div
+          class="grid grid-rows-2 gap-6"
+          style="grid-template-columns: 12rem 1fr"
+        >
+          <div class="bg-gradient-to-r from-green to-lightgreen"></div>
+          <div class="bg-gray_4 px-8 py-12">
+            <div>
+              <h2 class="text-3xl text-purple font-black">Admins' Portal</h2>
+            </div>
+            <div class="my-6 bg-green">
+              <input
+                class="w-full p-5 block border-none outline-none"
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Search"
+              />
+            </div>
+            <div
+              class="w-100 grid gap-8"
+              style="grid-template-columns: 8rem 1fr 1fr 1fr"
+            >
+              <div class="bg-gray_2 text-purple p-2 pl-4 font-semibold">
+                <button>Filter</button>
+              </div>
+
+              <div class="flex items-center bg-white p-2 pl-4">
+                <label for="">Day</label>
+                <input
+                  class="bg-transparent"
+                  type="number"
+                  name="month"
+                  id="month"
+                  maxlength="2"
+                />
+              </div>
+
+              <div class="flex items-center bg-white p-2 pl-4">
+                <label for="">Month</label
+                ><input
+                  class="bg-transparent"
+                  type="number"
+                  name="month"
+                  id="month"
+                  maxlength="2"
+                />
+              </div>
+
+              <div class="flex items-center bg-white p-2 pl-4">
+                <label for="">Year</label
+                ><input
+                  class="bg-transparent"
+                  type="number"
+                  name="month"
+                  id="month"
+                  maxlength="4"
+                />
+              </div>
+            </div>
+
+            <table
+              class="mt-9 table table-auto border-separate border border-spacing-y-4 border-none w-full"
+            >
+              <thead class="bg-white">
+                <tr class="text-left">
+                  <th class="py-3 px-6">S/N</th>
+                  <th class="py-3 px-6">Name</th>
+                  <th class="py-3 px-6">Email</th>
+                  <th class="py-3 px-6">Phone No</th>
+                </tr>
+              </thead>
+              <tbody class="">
+                <tr class="bg-lightgreen text-white">
+                  <td class="py-3 px-6">1.</td>
+                  <td class="py-3 px-6">John Deo</td>
+                  <td  class="py-3 px-6"">johndeo@gmail</td>
+                  <td  class="py-3 px-6">09067187178</td>
+                </tr>
+
+                <tr class="bg-lightgreen text-white">
+                  <td class="py-3 px-6">2.</td>
+                  <td class="py-3 px-6">John Deo</td>
+                  <td  class="py-3 px-6"">johndeo@gmail</td>
+                  <td  class="py-3 px-6">09067187178</td>
+                </tr>
+
+                <tr class="bg-lightgreen text-white">
+                  <td class="py-3 px-6">3.</td>
+                  <td class="py-3 px-6">John Deo</td>
+                  <td  class="py-3 px-6"">johndeo@gmail</td>
+                  <td  class="py-3 px-6">09067187178</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
