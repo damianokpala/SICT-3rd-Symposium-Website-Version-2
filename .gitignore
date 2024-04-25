@@ -2,5 +2,5 @@
 package-lock.json
 package.json
 tailwind.config.json
-/src/input.css
+/src/styles/input.css
 tailwind.config.js
