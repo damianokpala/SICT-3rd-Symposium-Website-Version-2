@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Portal</title>
 
-    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="stylesheet" href="../src/output.css" />
+
+    
   </head>
   <body class="relative">
     <header class="py-9 text-xl">
@@ -41,7 +43,7 @@
             <div>
               <h2 class="text-3xl text-purple font-black">Admins' Portal</h2>
             </div>
-            <div class="my-6 bg-green">
+            <div class="my-6 flex gap-5S">
               <input
                 class="w-full p-5 block border-none outline-none"
                 type="search"
@@ -49,6 +51,8 @@
                 id="search"
                 placeholder="Search"
               />
+
+              <button class="bg-yellow" onclick="downloadCSV()">Download CSV</button>
             </div>
             <div
               class="w-100 grid gap-8"
@@ -92,7 +96,7 @@
               </div>
             </div>
 
-            <table
+            <table id="#userData"
               class="mt-9 table table-auto border-separate border border-spacing-y-4 border-none w-full"
             >
               <thead class="bg-white">
@@ -103,7 +107,7 @@
                   <th class="py-3 px-6">Phone No</th>
                 </tr>
               </thead>
-              <tbody class="">
+              <tbody class="tbody">
                 <tr class="bg-lightgreen text-white">
                   <td class="py-3 px-6">1.</td>
                   <td class="py-3 px-6">John Deo</td>
@@ -130,5 +134,8 @@
         </div>
       </div>
     </main>
+
+    <script src="../src/scripts/data_fetch.js"></script>
+    <script src="../src/scripts/download.js"></script>
   </body>
 </html>
